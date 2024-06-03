@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Exponencial e Logarítmica</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Exponencial e Logarítmica</h1>
+        <div class="calculator">
+            <select id="operation" onchange="toggleInputs()">
+                <option value="exp">Exponenciação (base^expoente)</option>
+                <option value="log">Logaritmo (log base valor)</option>
+            </select>
+            
+            <div id="exp-inputs">
+                <input type="number" id="base-number" placeholder="Digite a base" oninput="clearResult()">
+                <input type="number" id="exp-number" placeholder="Digite o expoente" oninput="clearResult()">
+            </div>
+            
+            <div id="log-inputs">
+                <input type="number" id="log-base-number" placeholder="Digite o valor" oninput="clearResult()">
+                <input type="number" id="log-number" placeholder="Digite a base" oninput="clearResult()">
+            </div>
+            
+            <button onclick="calculate()">Calcular</button>
+            
+            <div id="result"></div>
+            <div id="error"></div>
+        </div>
+    </div>
+    <div id="nomes">
+        <p>Luis Gustavo dos Passos Ribeiro<br>Kaue dos Anjos Silva<br>Carlos Eduardo Soares
+            <br>João Marcelo Peres Irber<br>Marcos Paulo Ferraz Da Silva</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
